@@ -1,0 +1,63 @@
+------------------------------ALL PAGES------------------------------
+-Fix that height/whitespace thing (currently hagwartz.css:26 height:80vh)
+
+------------------------------DATABASE------------------------------
+-Need to figure out how we want to add users
+-Do we want to whitelist available sections on a per course basis? On a per semester, per course basis?
+-How the shit are we going to do semesters?
+
+
+
+------------------------------INDEX PAGE------------------------------
+-Make the background image less squishy if possible? (look into an actual filtering over the homepage)
+-On click of login button
+    -Load Hagwartz database
+    -Load user from database based on name?
+    -Fuq da passwords
+
+
+------------------------------HOMEPAGE------------------------------
+-Make the 'graphs' less squishy (maybe split into seperate images?)
+-Try to force completed/recommended courses tabs to be always on the same line
+-Recommended courses needs to be cleaned up
+    -More details than just Dept and Id (short name?)
+    -It kinda looks ugly..
+    -Add to planner button has zero feedback that an action has ACTUALLY been completed
+-Autoload page user content from database?
+
+
+------------------------------SCHEDULE PAGE------------------------------
+-Semesters dropdown needs to reference something
+-Export to calander needs to have functionality built in
+-On click of secheduled_courses we need to have more info available
+    -Maybe open up each matching element in the row?
+    -Maybe just include more info for each element?
+
+
+
+------------------------------REGISTRATION PLANNER PAGE------------------------------
+-scheduled courses need to have more info on click rather than just redirect to the search page
+-Try to force words in 'Planner Sections' to left align and not go past any buttons?
+-force legend to bottom of page when there is little to none content under 'Planner Sections'
+-Clicking register all with multiple conflicts only shows the dialog for the last conflicting course...
+
+
+
+------------------------------COURSE CATALOG - PREREQUISITE------------------------------
+-Clicking on any of the departments brings up the next graph below the current, and doesn't hide the current
+    -Maybe have an ID like thing in the URL that forces the witchwhat graph to show?
+-Clicking any graph element should bring up a dialog with more course info rather than redirecting to search page
+-Need to add the remaining background images to the other departments
+-Autoload graph nodes from Data? (don't quite know how I'd get em to line up in the right spots.. )
+
+
+------------------------------COURSE CATALOG - SEARCH------------------------------
+-Force 'Add to Planner' and 'Add to Compare' buttons to the bottom of the page.
+-'Has PreReqs' Filter does nothing (other than all or nothing) 
+-'Add To PLanner' reject if course is registered needs feedback (currently just does nothing)  
+-'Add Selection to Planner/Compare' should only activate on visible elements where display:"" and ignores display:none
+
+
+
+------------------------------COURSE CATALOG - COMPARE------------------------------
+-Welp apparently this page is just fucking perfect...
